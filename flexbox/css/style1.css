@@ -1,0 +1,169 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/*font-family: 'Abel', sans-serif;*/
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --brown: #ab8149;
+  --lysbrun: #d4bb9b;
+
+  /* fonte */
+  --font: 'Abel', sans-serif; /* brødtekst */
+  --displayH: 'Luckiest Guy', cursive; /* overskrifter */
+
+  /* teksturer ("fliselagte baggrunde") */
+}
+}
+html, body {
+    height: 100%;
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-image: url(../images/bkaffeb.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  min-height: 150vh;
+  background-position: top;
+  background-attachment: scroll;
+  background-color: var(--lysbrun);
+  font-family: var(--font);
+}
+main{
+  /* make sure to cover the screen */
+ min-height: 100vh;
+ /* need a solid bg to hide the footer */
+ background: #d4bb9b;
+ ba
+ /* put on top */
+ position: relative;
+ z-index: 1;
+ padding: 2rem;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 50px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ab8149;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px 100px;
+
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+.logolille{
+    position: fixed;}
+}
+footer{
+  position: sticky;
+  margin-top: 131vh;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #d4bb9b ;
+  left: 0;
+  text-align: center;
+}
+
+
+.facebook{
+  float: right;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+.instagram{
+  width: 50px;
+  padding-top: 70px;
+
+}
+
+
+.tekstb {
+  display: inline-block;
+  margin-left: 10px;
+  float: none;
+  box-sizing: border-box;
+
+}
+.hjf {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -40px;
+  margin-top: -50px;
+}
+.overskrift{
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: -30px;
+}
+.hej{
+  text-align: left;
+}
+
+
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+}
+
+/* Layout: Flexbox */
